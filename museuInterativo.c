@@ -39,7 +39,6 @@ void solicitarIngressos(struct Exposicao exposicoes[]) {
         printf("Exposição %d - Escolha a categoria de ingresso:\n", idExposicao);
         printf("a. Inteira\n");
         printf("b. Meia entrada\n");
-        printf("c. Gratuito (para idosos)\n");
         scanf(" %c", &categoria);
 
         printf("Digite a quantidade de ingressos desejada para a Exposição %d: ", idExposicao);
@@ -49,8 +48,6 @@ void solicitarIngressos(struct Exposicao exposicoes[]) {
             valor = quantidade * 20.0;
         } else if (categoria == 'b') {
             valor = quantidade * 10.0;
-        } else if (categoria == 'c') {
-            valor = 0.0;
         } else {
             printf("Categoria de ingresso inválida.\n");
         }
