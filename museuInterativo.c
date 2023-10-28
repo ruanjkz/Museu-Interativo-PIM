@@ -45,9 +45,9 @@ void solicitarIngressos(struct Exposicao exposicoes[]) {
         scanf("%d", &quantidade);
 
         if (categoria == 'a') {
-            valor = quantidade * 20.0;
+            valor = quantidade * 50.0;
         } else if (categoria == 'b') {
-            valor = quantidade * 10.0;
+            valor = quantidade * 25.0;
         } else {
             printf("Categoria de ingresso inválida.\n");
         }
